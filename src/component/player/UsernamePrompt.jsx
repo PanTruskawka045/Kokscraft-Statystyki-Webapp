@@ -12,7 +12,6 @@ function UsernamePrompt({link, error = null, prompt}) {
     const onClick = () => {
         if (playerName === "") return;
         navigate(`/${link}/${playerName}`);
-        // window.location.reload();
     }
 
     return (
@@ -20,7 +19,9 @@ function UsernamePrompt({link, error = null, prompt}) {
             <form className={"rounded-xl bg-border-primary flex items-center flex-col text-center p-10 font-red-hat"} onSubmit={onClick}>
                 <img src={logo} className={"w-52"} alt={"Logo koskcraft"}/>
 
-                <span className={"text-5xl text-text-primary font-red-hat"}>{prompt}</span>
+                <div className={"w-[80%] text-wrap"}>
+                    <span className={"text-5xl text-text-primary font-red-hat"}>{prompt}</span>
+                </div>
                 {error !== null && (
                     <div className={"rounded-xl border-solid border-error my-3 border-2 block py-1"}>
                         <span className={"text-error text-3xl m-16"}>{error}</span>

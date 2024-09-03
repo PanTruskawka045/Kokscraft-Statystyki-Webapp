@@ -123,6 +123,48 @@ function Navbar() {
                 </li>
 
 
+                <li className="nav-item">
+                    <Link to={"/speedbuilders/stats"} className="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 726.67 722.83">
+                            <defs>
+                            </defs>
+                            <rect fill="currentColor" className="text-nav-primary" x=".91" y="182.23" width="337.46"
+                                  height="153.6"/>
+                            <rect fill="currentColor" className="text-nav-primary" x="389.21" y="182.23" width="337.46"
+                                  height="153.6"/>
+                            <rect fill="currentColor" className="text-nav-primary" x="157.98" y="388.29" width="411.05"
+                                  height="153.6"/>
+                            <rect fill="currentColor" className="text-nav-secondary" y="388.29" width="107.57"
+                                  height="153.6"/>
+                            <rect fill="currentColor" className="text-nav-primary" x="618.63" y="388.29" width="108.04"
+                                  height="153.6"/>
+                            <path fill="currentColor" className="text-nav-primary"
+                                  d="M.91,594.35h337.46v128.49H104.75c-57.31,0-103.84-46.53-103.84-103.84v-24.65h0Z"/>
+                            <path fill="currentColor" className="text-nav-secondary"
+                                  d="M393.68,594.35h328.5c2.47,0,4.48,2.01,4.48,4.48v16.77c0,59.19-48.05,107.24-107.24,107.24h-225.74c-2.47,0-4.48-2.01-4.48-4.48v-119.53c0-2.47,2.01-4.48,4.48-4.48Z"/>
+                            <rect fill="currentColor" className="text-nav-secondary" x="157.46" width="411.57"
+                                  height="129.77"/>
+                            <path fill="currentColor" className="text-nav-primary"
+                                  d="M107.57,0h0v129.77H0v-22.2C0,48.2,48.2,0,107.57,0Z"/>
+                            <path fill="currentColor" className="text-nav-secondary"
+                                  d="M618.63,0h0c59.63,0,108.04,48.41,108.04,108.04v21.73h-108.04V0h0Z"/>
+                        </svg>
+                        <span className="link-text">Statystyki Speed Builders</span>
+                    </Link>
+                </li>
+
+                <li className="nav-item">
+                    <Link to={"/speedbuilders/leaderboards"} className="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 512 512">
+                            <path className="text-nav-secondary" fill="currentColor"
+                                d="M4.1 38.2C1.4 34.2 0 29.4 0 24.6C0 11 11 0 24.6 0L133.9 0c11.2 0 21.7 5.9 27.4 15.5l68.5 114.1c-48.2 6.1-91.3 28.6-123.4 61.9L4.1 38.2zm503.7 0L405.6 191.5c-32.1-33.3-75.2-55.8-123.4-61.9L350.7 15.5C356.5 5.9 366.9 0 378.1 0L487.4 0C501 0 512 11 512 24.6c0 4.8-1.4 9.6-4.1 13.6zM80 336a176 176 0 1 1 352 0A176 176 0 1 1 80 336zm184.4-94.9c-3.4-7-13.3-7-16.8 0l-22.4 45.4c-1.4 2.8-4 4.7-7 5.1L168 298.9c-7.7 1.1-10.7 10.5-5.2 16l36.3 35.4c2.2 2.2 3.2 5.2 2.7 8.3l-8.6 49.9c-1.3 7.6 6.7 13.5 13.6 9.9l44.8-23.6c2.7-1.4 6-1.4 8.7 0l44.8 23.6c6.9 3.6 14.9-2.2 13.6-9.9l-8.6-49.9c-.5-3 .5-6.1 2.7-8.3l36.3-35.4c5.6-5.4 2.5-14.8-5.2-16l-50.1-7.3c-3-.4-5.7-2.4-7-5.1l-22.4-45.4z"/>
+                        </svg>
+                        <span className="link-text">Topki Speed Builders</span>
+                    </Link>
+                </li>
+
+
             </ul>
         </nav>
     );

@@ -12,13 +12,13 @@ module.exports = {
             "nav-primary": "#ff7eee",
             "nav-secondary": "#df49a6",
             "border-primary": "#4b4168",
+            "border-secondary": "#766aa8",
             "text-primary": "#edecff",
             "background-primary": "#6D639F",
             "input": "#dec9fc",
             "placeholder": "#6F5C8FFF",
             "error": "#ff5555",
-            amber: colors.amber,
-            red: colors.red,
+            ...colors
         },
         extend: {
             rotate: {
