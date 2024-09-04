@@ -101,8 +101,6 @@ function LeaderboardView() {
                         <div className={"flex items-center"}>
                             <span className={`text-border-primary text-xl`}>{recordData.timeInSeconds}s</span>
                         </div>
-                        {/*<span className={`${index % 2 === 1 ? 'text-border-primary' : 'text-border-secondary'}`}>{schematicName(stats)}</span>*/}
-                        {/*<span className={`${index % 2 === 1 ? 'text-border-primary' : 'text-border-secondary'}`}>{formatTime(data.stats[stats])}</span>*/}
                     </>
                         ;
                 })}
