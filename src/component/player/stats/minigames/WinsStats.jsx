@@ -9,7 +9,7 @@ function WinsStats({data}){
                 <span>{formatInteger(data.wins)}</span>
             </StatRecord>
             <StatRecord title={"Przegrane: "}>
-                <span>{formatInteger(data.loses)}</span>
+                <span>{formatInteger(data.losses)}</span>
             </StatRecord>
             <StatRecord title={"Win Ratio: "}>
                 <span>{roundToPercent(data.winRatio)}</span>
