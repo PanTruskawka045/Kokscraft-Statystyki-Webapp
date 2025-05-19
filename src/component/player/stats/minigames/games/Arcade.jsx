@@ -4,7 +4,7 @@ import React from "react";
 
 function ArcadeMinigames({data}){
     return (<>
-        <h2 className={"font-[900] text-3xl text-border-primary"}>Gravity</h2>
+        <h2 className={"font-[900] text-3xl text-border-primary mobile:text-2xl"}>Gravity</h2>
         <WinsStats data={data.stats.minigames.gravity.overall}/>
     </>);
 }

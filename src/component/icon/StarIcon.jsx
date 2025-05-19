@@ -21,8 +21,6 @@ export function FilledStarIcon({size = 12, className = ""}) {
 export function EmptyStarIcon({size = 12, className = ""}) {
     return (
         <svg
-            width={size}
-            height={size}
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"

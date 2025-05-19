@@ -37,9 +37,9 @@ function Accordion({title, children, open = false, topGap = 0}) {
             <div
                 className={"cursor-pointer bg-border-primary flex overflow-hidden p-4 items-center font-[900] text-text-primary text-3xl pl-4"}
                 onClick={toggleAccordion}>
-                <span>{title}</span>
+                <span className={"mobile:text-2xl"}>{title}</span>
                 <animated.div style={iconAnimation} className="ml-auto">
-                    <ExpandMoreIcon/>
+                    <ExpandMoreIcon className={"mobile:w-8 mobile:h-8"}/>
                 </animated.div>
             </div>
             <animated.div style={openAnimation} className="bg-text-primary" ref={childrenRef}>

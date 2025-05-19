@@ -33,21 +33,21 @@ function PlayerStatsContent({data, schema}) {
         setFavourites(fav);
     }
 
-    return (<div className={"grid grid-cols-[minmax(400px,_30%)_auto] p-6 mobile:grid-cols-1 gap-2 font-red-hat"}>
+    return (<div className={"grid grid-cols-[minmax(400px,_30%)_auto] p-6 mobile:grid-cols-1 gap-2 font-red-hat mobile:pb-24"}>
         <div className={"mobile:grid-cols-1"}>
             <div className={"w-auto rounded-xl border-solid border-2 border-border-primary bg-text-primary p-4"}>
-                <span className={"text-border-primary text-[32px] font-[900]"}>INFORMACJE O GRACZU</span>
+                <span className={"text-border-primary text-[32px] font-[900] mobile:text-[24px]"}>INFORMACJE O GRACZU</span>
                 <div className={"flex flex-row items-center gap-2 flex-wrap"}>
                     <img
                         src={`https://visage.surgeplay.com/face/${data.player.mojangAccount ? data?.player?.authId : "c06f8906-4c8a-4911-9c29-ea1dbd1aab82"}.png`}
                         alt={data.player.nickname}
-                        className={"aspect-square h-12"}/>
+                        className={"aspect-square h-12 mobile:h-10"}/>
                     <span
-                        className={"text-border-primary text-[32px] font-[900]"}>{data.player.nickname}</span>{!!favourites[`${data.player.id}`] ? (
+                        className={"text-border-primary text-[32px] font-[900] mobile:text-[24px]"}>{data.player.nickname}</span>{!!favourites[`${data.player.id}`] ? (
                     <span className={"cursor-pointer hover:scale-105 transition-transform"}
-                          onClick={removeFavourite}><FilledStarIcon className={"text-amber-500 ml-auto"}/></span>
+                          onClick={removeFavourite}><FilledStarIcon className={"text-amber-500 ml-auto mobile:h-8 mobile:w-8"}/></span>
                 ) : (<span className={"cursor-pointer hover:scale-105 transition-transform"}
-                           onClick={favourite}><EmptyStarIcon className={"text-amber-500 ml-auto"}/></span>)}
+                           onClick={favourite}><EmptyStarIcon className={"text-amber-500 ml-auto mobile:h-8 mobile:w-8"}/></span>)}
                 </div>
 
                 <div className={"w-auto h-[2px] my-4 bg-border-primary"}/>

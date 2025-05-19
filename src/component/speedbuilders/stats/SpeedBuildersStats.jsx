@@ -47,7 +47,7 @@ function DownloadingPlayerFriends({player}) {
                         "Content-Type": "application/json",
                         "Accept": "application/json",
                     },
-                    credentials: "include"
+                    // credentials: "include"
                 }).then(res => res.json()).then(data => {
                     setData(data);
                     setLoading(false);
@@ -63,7 +63,7 @@ function DownloadingPlayerFriends({player}) {
                         "Content-Type": "application/json",
                         "Accept": "application/json",
                     },
-                    credentials: "include"
+                    // credentials: "include"
                 }).then(res => res.json()).then(data => {
                     setData(data);
                     checkData(data)
@@ -82,7 +82,7 @@ function DownloadingPlayerFriends({player}) {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
                 },
-                credentials: "include"
+                // credentials: "include"
             }).then(res => res.json()).then(data => {
                 setSchematicData(data);
                 setLoading(false);

@@ -1,16 +1,16 @@
 import React from "react";
 
 
-function ExpandMoreIcon({size = 12}) {
+function ExpandMoreIcon({size = 12, className = ""}) {
     return (
         <svg
-            width={size}
-            height={size}
+            // width={size}
+            // height={size}
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
             data-icon="chevron-down"
-            className={`svg-inline--fa fa-chevron-down fa-w-14 w-${size} h-${size}`}
+            className={`svg-inline--fa fa-chevron-down fa-w-14 ${className} w-${size} h-${size}`}
             role="img"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 448 512">

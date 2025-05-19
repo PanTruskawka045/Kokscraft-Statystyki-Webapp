@@ -17,10 +17,10 @@ function UsernamePrompt({link, error = null, prompt}) {
     return (
         <div className={"flex items-center justify-center h-screen"}>
             <form className={"rounded-xl bg-border-primary flex items-center flex-col text-center p-10 font-red-hat"} onSubmit={onClick}>
-                <img src={logo} className={"w-52"} alt={"Logo koskcraft"}/>
+                <img src={logo} className={"w-52 mobile:w-36"} alt={"Logo koskcraft"}/>
 
                 <div className={"w-[80%] text-wrap"}>
-                    <span className={"text-5xl text-text-primary font-red-hat"}>{prompt}</span>
+                    <span className={"text-5xl text-text-primary font-red-hat mobile:text-3xl"}>{prompt}</span>
                 </div>
                 {error !== null && (
                     <div className={"rounded-xl border-solid border-error my-3 border-2 block py-1"}>
@@ -31,7 +31,8 @@ function UsernamePrompt({link, error = null, prompt}) {
                 <input onInput={(e) => setPlayerName(e.target.value)}
                        className={"mt-5 rounded-full px-5 text-2xl h-12 w-2/3 bg-input text-border-primary" +
                            " focus:border-0 focus:outline-none" +
-                           " placeholder:text-placeholder"}
+                           " placeholder:text-placeholder" +
+                           " mobile:w-11/12"}
                        placeholder={"Wpisz nick gracza"}/>
                 <button
                     className={"mt-5 rounded-full px-5 text-2xl h-12 w-5/12 bg-input text-border-primary" +

@@ -11,7 +11,7 @@ import LeaderboardView from "./speedbuilders/leaderboard/LeaderboardView";
 function MainContent() {
 
     return (
-        <div className={"lg:px-20 lg:py-0 px-0 pb-20 w-screen min-h-screen bg-background-primary"}>
+        <div className={"lg:px-20 lg:py-0 px-0 min-h-screen bg-background-primary"}>
             <Routes>
                 {/*<Route path="/" element={<MainPage/>}/>*/}
                 {/*<Route index element={<MainPage/>}/>*/}

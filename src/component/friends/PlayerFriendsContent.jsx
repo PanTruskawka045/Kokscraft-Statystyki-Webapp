@@ -9,11 +9,11 @@ function PlayerFriendsContent({data}) {
 
 
     return (
-        <div className={"mobile:pt-2 lg:px-2"}>
-            <h1 className={"text-5xl text-text-primary font-red-hat text-center"}>Znajomi</h1>
+        <div className={"mobile:pt-2 lg:px-2 mobile:pb-20"}>
+            <h1 className={"text-5xl text-text-primary font-red-hat text-center mobile:text-3xl font-bold"}>Znajomi</h1>
             {data.length === 0 ? (
                 <>
-                    <h1 className={"text-3xl text-text-primary font-red-hat text-center"}>Podany gracz nie ma żadnych znajomych. 🥹</h1>
+                    <h1 className={"text-3xl text-text-primary font-red-hat text-center mobile:text-2xl"}>Podany gracz nie ma żadnych znajomych. 🥹</h1>
                 </>
             ) : (
                 <div className={"grid mobile:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-3 font-red-hat "}>
@@ -66,17 +66,17 @@ function PlayerRecordComponent({data, favourites, setFavourites}) {
         <div className={"flex mt-2 gap-x-1"}>
             <div onClick={stats}
                  className={"rounded bg-border-primary text-text-primary p-1 font-bold grow flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"}>
-                <span>Statystyki</span>
+                <span className={"mobile:text-sm"}>Statystyki</span>
             </div>
             <div onClick={friends}
                  className={"rounded bg-border-primary text-text-primary p-1 font-bold grow flex items-center justify-center cursor-pointer hover:scale-105 transition-transform"}>
-                Znajomi
+                <span className={"mobile:text-sm"}>Znajomi</span>
             </div>
             <div
                 onClick={!!favourites[`${data.id}`] ? removeFavourite : favourite}
                 className={"rounded bg-border-primary text-text-primary p-1 font-bold flex-none items-center justify-center cursor-pointer hover:scale-105 transition-transform"}>
-                {!!favourites[`${data.id}`] ? (<FilledStarIcon size={32} className={"text-amber-500"}/>) : (
-                    <EmptyStarIcon size={32} className={"text-amber-500"}/>)}
+                {!!favourites[`${data.id}`] ? (<FilledStarIcon size={8} className={"text-amber-500"}/>) : (
+                    <EmptyStarIcon size={8} className={"text-amber-500"}/>)}
             </div>
         </div>
     </div>
