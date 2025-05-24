@@ -22,7 +22,7 @@ function LeaderboardView() {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
                 },
-                // credentials: "include"
+                credentials: "include"
             }).then(res => res.json()).then(data => {
                 setSchematicData(data);
                 if (!data.success) {
@@ -38,7 +38,7 @@ function LeaderboardView() {
                     "Content-Type": "application/json",
                     "Accept": "application/json",
                 },
-                // credentials: "include"
+                credentials: "include"
             }).then(res => res.json()).then(data => {
                 setData(data);
                 setLoading(false);
