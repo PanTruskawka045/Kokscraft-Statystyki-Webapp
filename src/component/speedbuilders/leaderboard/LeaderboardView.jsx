@@ -90,14 +90,16 @@ function LeaderboardView() {
                         <div className={"flex items-center"}>
                             <span className={`text-border-primary text-3xl`}>{placeIcon(index + 1)}</span>
                         </div>
-                        <div className={"flex flex-row items-center gap-2"}>
-                            <img
-                                src={`https://visage.surgeplay.com/face/${recordData.playerSkinData.skin || "c06f8906-4c8a-4911-9c29-ea1dbd1aab82"}.png`}
-                                alt={recordData.playerSkinData.name}
-                                className={"aspect-square h-12"}/>
-                            <span
-                                className={`text-border-primary text-xl font-bold`}>{recordData.playerSkinData.name}</span>
-                        </div>
+                        <Link to={`/speedbuilders/stats/${recordData.playerSkinData.name}`}>
+                            <div className={"flex flex-row items-center gap-2"}>
+                                <img
+                                    src={`https://visage.surgeplay.com/face/${recordData.playerSkinData.skin || "c06f8906-4c8a-4911-9c29-ea1dbd1aab82"}.png`}
+                                    alt={recordData.playerSkinData.name}
+                                    className={"aspect-square h-12"}/>
+                                <span
+                                    className={`text-border-primary text-xl font-bold`}>{recordData.playerSkinData.name}</span>
+                            </div>
+                        </Link>
                         <div className={"flex items-center"}>
                             <span className={`text-border-primary text-xl`}>{recordData.timeInSeconds}s</span>
                         </div>
