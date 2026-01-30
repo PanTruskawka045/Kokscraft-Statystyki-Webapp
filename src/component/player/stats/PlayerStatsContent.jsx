@@ -13,6 +13,7 @@ import BuildGamesMinigames from "./minigames/games/BuildGames";
 import {EmptyStarIcon, FilledStarIcon} from "../../icon/StarIcon";
 import useLocalStorage from "../../../hook/useLocalStorage";
 import PillarsOfFortune from "./minigames/games/PillarsOfFortune";
+import HeadwarsMinigame from "./minigames/games/Headwars";
 
 function PlayerStatsContent({data, schema}) {
 
@@ -104,6 +105,11 @@ function PlayerStatsContent({data, schema}) {
             <Accordion title={"BUILD GAMES"} open={false} topGap={2}>
                 <div>
                     <BuildGamesMinigames data={data} schema={schema}/>
+                </div>
+            </Accordion>
+            <Accordion title={"HEAD WARS"} open={false} topGap={2}>
+                <div>
+                    <HeadwarsMinigame data={data} schema={schema}/>
                 </div>
             </Accordion>
 
